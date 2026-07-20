@@ -14,3 +14,9 @@ Each drawn route is densified to 10 m intervals and matched against all OSM `hig
 corridor (25 m tolerance), classifying every stretch as existing trail / 4WD track / road, or
 no-OSM-match (proposed or unmapped). OSM ways sharing a name are joined into single segments.
 KML source files are not published here.
+
+## GIS exports (analyzed segments)
+
+- `LittleBabyBlackBear-segments.kml` — styled KML, one placemark per joined segment (Google Earth / CalTopo / ArcGIS)
+- `LittleBabyBlackBear-segments-shp.zip` — Shapefile, one row per segment part (WGS84; fields: name, class, section, part_mi, seg_mi, osm_ways)
+- `LittleBabyBlackBear-segments-gdb.zip` — Esri File Geodatabase, layer `gcb_segments`, same schema
